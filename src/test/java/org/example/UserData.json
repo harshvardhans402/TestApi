@@ -1,0 +1,16 @@
+[{
+  "first_name": "Harsh",
+  "last_name": "Sharma",
+  "email": "harshvardhan@gmail.com",
+  "avatar": "https://reqres.in/img/faces/2-image.jpg",
+  "password": "12345"
+}
+,
+  {
+    "firstName": "Subhash",
+    "lastName": "Sharma",
+    "email": "subhash@gmail.com",
+    "avatar": "https://reqres.in/img/faces/2-image.jpg",
+    "password": "12345"
+  }
+]
