@@ -1,7 +1,7 @@
 package org.example;
 
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import io.restassured.RestAssured;
+
 import io.restassured.response.Response;
 import org.example.pojos.User;
 import org.example.utility.JSONUtility;
@@ -29,22 +29,22 @@ public class ApiTests {
 
     @BeforeClass
     public static void setupReport() {
-        // Create an instance of the ExtentHtmlReporter and link it to ExtentReports
-        htmlReporter = new ExtentSparkReporter("test-report.html");  // Save report to this file
+
+        htmlReporter = new ExtentSparkReporter("test-report.html");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
     }
 
     @BeforeMethod
     public void beforeTest(Method method) {
-        // Create an ExtentTest for each test method and start logging
+
         test = extent.createTest(method.getName());
     }
 
     @AfterMethod
     public void afterTest() {
-        // Mark the test as passed or failed based on assertions in the test
-        extent.flush();  // Ensure the test results are saved
+
+        extent.flush();
     }
 
     @BeforeClass
@@ -233,7 +233,7 @@ public class ApiTests {
 
     @AfterClass
     public static void teardownReport() {
-        // Flush the ExtentReports instance to save the report
+
         extent.flush();
     }
 }
